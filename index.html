@@ -61,6 +61,7 @@
         <div class="buttons">
             <button id="yesBtn">Yes</button>
             <button id="noBtn">No</button>
+            <button onclick="redirectToPage()">Yes</button>
         </div>
     </div>
     <script>
@@ -69,9 +70,9 @@
          * Redirects the user to the "yes" page
          *
 /******  c697cf86-d095-444c-87ed-fa6d33a219b1  *******/
-     function nextPage() {
-                        window.location.href = "yes.html";
-                    }   
+    function redirectToPage() {
+    window.location.href = "yes.html";
+}
         
         const noBtn = document.getElementById('noBtn');
 
