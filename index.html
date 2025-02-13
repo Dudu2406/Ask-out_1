@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day</title>
@@ -56,26 +55,20 @@
     <div class="container">
         <h1>Will you be my Valentine?</h1>
         <div class="gif-container">
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExejRyMjd6cnY3bHdtbGN3amExcmI1ZGE5cnR6MDI5Nnh6Z3d6Y2I1NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLG2ZFo3yBMHYXC36F/giphy.gif"/>
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExejRyMjd6cnY3bHdtbGN3amExcmI1ZGE5cnR6MDI5Nnh6Z3d6Y2I1NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLG2ZFo3yBMHYXC36F/giphy.gif" />
         </div>
         <div class="buttons">
             <button id="yesBtn">Yes</button>
             <button id="noBtn">No</button>
-            <button onclick="redirectToPage()">Yes</button>
         </div>
     </div>
     <script>
-/*************  ✨ Codeium Command ⭐  *************/
-        /**
-         * Redirects the user to the "yes" page
-         *
-/******  c697cf86-d095-444c-87ed-fa6d33a219b1  *******/
-    function redirectToPage() {
-    window.location.href = "yes.html";
-}
-        
+        function redirectToPage() {
+            window.location.href = "yes.html";
+        }
+    
         const noBtn = document.getElementById('noBtn');
-
+    
         noBtn.addEventListener('mouseover', () => {
             const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
             const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
@@ -83,11 +76,10 @@
             noBtn.style.left = `${x}px`;
             noBtn.style.top = `${y}px`;
         });
-
+    
         document.getElementById('yesBtn').addEventListener('click', () => {
             alert('Yay! Happy Valentine\'s Day!');
+            redirectToPage(); // Redirect after clicking the "Yes" button
         });
     </script>
-</body>
-</html>
-</body>
+
